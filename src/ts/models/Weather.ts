@@ -1,5 +1,3 @@
-import { WeatherService } from "../services/WeatherService";
-
 export interface WeatherProps {
   latitude: number;
   longitude: number;
