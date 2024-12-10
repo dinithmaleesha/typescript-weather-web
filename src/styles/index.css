@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.weather-image {
+  position: relative;
+  background-color: #d4d4d4;
+  height: 500px;
+  display: flex;
+}
+
+.weather-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.weather-title {
+  position: absolute;
+  color: white;
+  font-size: 32px;
+  top: 10px; 
+  left: 20px;
+}
+
+.card-container {
+  position: absolute;
+  top: 65%; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  width: 300px;
+}
+
+.temperature-card, .weather-details-card, .sunrise-sunset-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.temperature-top {
+  font-size: 60px;
+  font-weight: bold;
+  color: #4A90E2;
+  margin-bottom: 16px;
+}
+
+.temperature-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+}
+
+.weather-details-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  width: 300px;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.weather-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-label {
+  font-weight: bold;
+  color: #4A90E2;
+  text-align: left;
+  flex: 1;
+}
+
+.weather-value {
+  font-weight: normal;
+  color: #333;
+  text-align: right;
+  flex: 1;
+  margin-right: 2px;
+}
+
+.sunrise-sunset-value {
+  font-weight: normal;
+  color: #333;
+}
+
+.sunrise-sunset-label {
+  font-weight: bold;
+  color: #4A90E2;
+}
+
+.sunrise-sunset-card h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4A90E2;
+  margin-bottom: 15px;
+}
+
+.sunrise-sunset-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}

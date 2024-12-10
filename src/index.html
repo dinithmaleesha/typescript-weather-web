@@ -1,12 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>My First Parcel App</title>
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Wave</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <div class="weather-image">
+    <h1 class="weather-title">WeatherWave</h1>
+    <img src="https://images.unsplash.com/photo-1509803874385-db7c23652552?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Weather Image" />
+  </div>
 
-    <script src="ts/index.ts" type="modules"></script>
-  </body>
+  <div class="card-container">
+    <div class="card temperature-card">
+      <div class="temperature-top">
+        <span id="temperature" class="large-temperature">00</span>°C
+      </div>
+      <div class="temperature-bottom">
+        <p>Max: <span id="temp-max">00</span> °C</p>
+        <p>Min: <span id="temp-min">00</span> °C</p>
+      </div>
+    </div>
+
+    <div class="card weather-details-card">
+      <div class="weather-item">
+        <div class="weather-label">Wind Speed:</div>
+        <div id="wind-speed" class="weather-value">--</div> km/h
+      </div>
+      <div class="weather-item">
+        <div class="weather-label">Wind Direction:</div>
+        <div id="wind-direction" class="weather-value">--</div>°
+      </div>
+      <div class="weather-item">
+        <div class="weather-label">Precipitation:</div>
+        <div id="precipitation" class="weather-value">--</div> mm
+      </div>
+      <div class="weather-item">
+        <div class="weather-label">Humidity:</div>
+        <div id="humidity" class="weather-value">--</div>%
+      </div>
+    </div>
+
+    <div class="card sunrise-sunset-card">
+      <h2>Sunrise & Sunset</h2>
+      <div class="sunrise-sunset-item">
+        <div class="sunrise-sunset-label">Sunrise:</div>
+        <div id="sunrise" class="sunrise-sunset-value">--</div>
+      </div>
+      <div class="sunrise-sunset-item">
+        <div class="sunrise-sunset-label">Sunset:</div>
+        <div id="sunset" class="sunrise-sunset-value">--</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="ts/index.ts" type="module"></script>
+</body>
 </html>
